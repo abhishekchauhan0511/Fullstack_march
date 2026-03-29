@@ -1,0 +1,86 @@
+*div{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /* box - sizing - that  control how the width and height 
+                      of an element should be calculated
+                      
+                      
+                      default: content - box
+         width+padding-right+padding-left+border-left=
+        content-box :  100+20+20+4+4=148
+
+        border-box we take it as a priority as it set the margin
+        according to the width and height we give to the element
+        border-box : 52+20+20+4=100 
+                     */
+}
+
+
+#div{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+#div2{
+    border: 4px solid black;
+    height: 40px;
+    width: 100px;
+    padding: 2px;   
+}
+
+
+.parent{
+    background-color: blueviolet;
+
+}
+
+.child{
+    border: 1px solid black;
+}
+
+/*Decendent selector -- which style both direct and indirect child*/
+/*
+.parent .child{
+    color: red;
+}*/
+
+.parent > .child{
+    color: aliceblue;
+}
+ /* Adjacent sibling selector---- ~ this symboll helps to select all te
+  elements present in the p but if we just use + selector right next to 
+  the element selector will select */
+.d1 ~ p{
+    background-color: red;
+}
+
+/*attribute selector------
+when we want to highlight all the inputs so we just give type not specify it*/   
+input[type="text"]{
+    background-color: yellow;
+}
+
+
+/*in any class we can't give number directly we can start with any alphabet
+  or - and _ these two symbols acn be used*/
+._123{
+    color: red;
+}
+
+
+._123{
+    background-color: yellowgreen;
+}
+/* id -- #
+   class -- . 
+   element -- tag name
+   grouping -- s1, s2, s3
+   universal -- *
+   decendent --parent child--- all child
+   child---p>c --- only direct child
+   adjacent sibling--- brother + siste-----> next sister
+   general sibling-----brother~ssister -----> all the sister after the brother  
+   */

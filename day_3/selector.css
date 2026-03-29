@@ -1,0 +1,32 @@
+div{
+    color: red;
+}
+
+/* id selector---it indicates with*#id name*/
+#div4{
+    color: blue;
+}
+
+/* class selector---it indicates with*.class name
+                ----can use multiple times*/
+.div2{
+    border: 1px solid black;
+    color: green;
+}
+
+/* element selector---it indicates with*tag name*/
+div{
+    font-size: 20px;
+}
+
+/*group selector-- collection of selectors seperated with , */
+
+b,i,del,#mark,.span{
+    display: block;
+}
+
+/*universal selectors - it indicates with* and apply for all selectors and for all the elements*/
+*{
+    background-color: antiquewhite;
+    margin: 10px;
+}
